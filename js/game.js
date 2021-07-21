@@ -13,6 +13,7 @@ const cellOptions = {
 
 function createBoard(gridWidth, bombAmount) {
     const board = [];
+    gameboard.style.setProperty('--size', gridWidth);
     for (let i = 0; i < gridWidth; i++) {
         const row = [];
         for (let j = 0; j < gridWidth; j++) {
@@ -23,12 +24,18 @@ function createBoard(gridWidth, bombAmount) {
                 square,
                 i,
                 j,
-        }
-        row.push(cell);
+                mine: true/false
+            }
+            row.push(cell);
         }
         board.push(row);
     }
-    return board;
+    board.forEach(row => {
+        row.forEach(tile => {
+            gameboard.append(tile.square);
+        })
+    });
+    return gameboard
 }
 
 

@@ -15,3 +15,10 @@
     background-color: yellow;
 }
 
+.gameboard {
+    display: inline-grid;
+    padding: 10px;
+    grid-template-columns: repeat(var(--size), 40px);
+    grid-template-rows: repeat(var(--size), 40px);
+    gap: 2px;
+}
