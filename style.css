@@ -1,0 +1,17 @@
+.gameboard > [data-status="hidden"] {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.gameboard > [data-status="mine"] {
+    background-color: orangered;
+}
+
+.gameboard > [data-status="number"] {
+    background-color: none;
+}
+
+.gameboard > [data-status="marked"] {
+    background-color: yellow;
+}
+
