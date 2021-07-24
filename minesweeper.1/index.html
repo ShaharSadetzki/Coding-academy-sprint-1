@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Minesweeper</title>
+</head>
+
+<body onload="init()">
+    <div class="background">
+        <img src="imgs\background.jpg" alt="cover" style="width: 100%;">
+
+        <h1>Minesweeper</h1>
+        <div class="level-btns">
+            <p>How good are you?</p>
+            <button onclick="levels(4,2)"><b>Begginer</b></button>
+            <button onclick="levels(8,12)"><b>Medium</b></button>
+            <button onclick="levels(12,30)"><b>Expert</b></button>
+        </div>
+        <div class="timer">
+            <label><b>Time:</b></label>
+            <label class="minutes"></label>
+            <label class="seconds"></label>
+        </div>
+        <div align="center" class="menu-container">
+            <div class="image">
+                <input type="image" name="starter-image" id="starter-image" src="imgs\playing.png">
+            </div>
+            <table class="gameboard" id="gameboard" border="1" cellpadding="15">
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+        <script src="game.js"></script>
+</body>
+
+</html>
