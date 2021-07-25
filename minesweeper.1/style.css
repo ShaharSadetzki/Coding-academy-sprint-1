@@ -41,15 +41,16 @@ h1 {
     background-color: (#4b74aa);
 }
 
-/* td:hover {
+td:hover {
     background-color: (#4b74aa);
-} */
+}
 
 .image {
     width: 80px;
     height: 80px;
     margin: auto;
-    float: right;}
+    float: right;
+}
 
 #starter-image {
     border: 2px outset;
